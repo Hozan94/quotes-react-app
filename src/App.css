@@ -36,3 +36,60 @@
     transform: rotate(360deg);
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+.quotes-section{
+margin-top: 10px;    
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.quote {
+  width:65%;
+  margin: 0;
+  background: #eee;
+  padding: 1em;
+  border-radius: 3em;
+}
+
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+
+blockquote {
+padding-left: 15px;
+border-left: 10px solid rgb(238, 80, 80);
+font-family: 'Source Code Pro', monospace;}
+
+blockquote::before {
+    content: open-quote;
+}
+blockquote::after {
+    content: close-quote;
+}
+blockquote {
+    quotes: "“" "”" "‘" "’";
+}
+
+figure {
+    height : 220px;
+}
+
+button{
+    font-size: 20px;
+    margin-top: 50px;
+    background: #eee;
+    padding: 1em;
+    border-style: none;
+    border-radius: 1em;
+    cursor: pointer;
+    height : 50%;
+}
+
+h1{
+    font-size: 50px;
+}
